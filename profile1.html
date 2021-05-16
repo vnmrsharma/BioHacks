@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta viewport content="width=device-width, initial scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome Beth!</h1>
+      <div class="para">
+        <h4>This is your green world, let's make it better together</h4>
+      </div>
+    </header>
+
+    <div class="max-width body">
+      <div class="col left">
+        <div class="profile">
+          <img src = "images/ankita.png">
+          <div class="content">
+            <h2>Beth Sanders</h2>
+            <h4>Teacher, Creator, and Life-Liver!</h4>
+            <p>Irvine, California</p>
+          </div>
+        </div>
+
+
+        <div class="card-body pt-0 pt-md-4">
+            <div class="row">
+              <div class="col">
+                <div class="card-profile-stats d-flex justify-content-center mt-md-5">
+                  <div>
+                    <span class="heading">521</span>
+                    <span class="description">Nodes Connected</span>
+                  </div>
+                  <div>
+                    <span class="heading">10</span>
+                    <span class="description">Plants Planted</span>
+                  </div>
+                  <div>
+                    <span class="heading">89</span>
+                    <span class="description">$ gifted</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="button"> 
+          <button><a href="updateprofilepage.html" class="button">Edit profile</a></button>
+        </div>
+      </div>
+
+      <div class="col right">
+        <div class="card">
+          <h2>Birthday's Today</h2>
+          <div class="birthday">
+            <div class="pic">
+              <img src="images/vinamra.jpg" alt="">
+            </div>
+            <div class="name">
+              <p>Shobhit</p>
+            </div>
+          </div>
+
+          <div class="birthday">
+            <div class="pic">
+              <img src="images/2.jpg" alt="">
+            </div>
+            <div class="name">
+              <p>Ethan Roos</p>
+            </div>
+          </div>
+
+          <div class="birthday">
+            <div class="pic">
+              <img src="images/ankita.png" alt="">
+            </div>
+            <div class="name">
+              <p>Ankita Auliwalia</p>
+            </div>
+          </div>
+
+          <div class="birthday">
+            <div class="pic">
+              <img src="images/vinamra.jpg" alt="">
+            </div>
+            <div class="name">
+              <p>Vinamra Sharma</p>
+            </div>
+          </div>
+
+          <div class="button">
+            <button><a href="/bday.html"</a>Expand</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <center><a href="#">
+	      <i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin-in"></i></a>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<ul class="sci">
+						<p class="cpryt"><center>
+						&copy; Copyright 2021 | <a>All Rights Reserved to Team Roots</a></center>
+					</p>
+				</div>
+			</div>
+
+    </footer>
+
+
+  </body>
+</html>
+
+<html>
+	<style>
+		*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+header{
+  background: url('images/back.jpg') no-repeat center;
+  background-size: cover;
+  color: #fff;
+  min-height: 250px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body{
+  background: #111;
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1{
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.para{
+  display: block;
+  width: 100%;
+}
+
+h4,
+p{
+    font-size: 20px;
+    margin: 5px 0px;
+}
+
+/*columns styling*/
+.col{
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.left{
+  text-align: left;
+  width: 70%
+}
+
+.profile img{
+    height: 250px;
+    width: 250px;
+    border-radius: 6px;
+}
+
+h2{
+  text-align: justify;
+  padding-bottom: 15px;
+}
+
+.content{
+    text-align: justify;
+}
+
+.right{
+  width: 28%;
+}
+
+.birthday{
+  margin-bottom: 20px;
+}
+
+.right .name{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.name p{
+  margin-top: 10px;
+}
+
+.pic{
+  display: inline-block;
+}
+
+.pic img{
+    height: 80px;
+    width: 80px;
+    border-radius: 6px;
+}
+
+
+.right p{
+    text-align: right;
+}
+
+/*button styling*/
+.button{
+    height: 47px;
+    width: 170px;
+    margin-top: 20px;
+}
+
+.button button{
+    height: 100%;
+    width: 100%;
+    border: 2px solid #cb0bf1;
+    background: #cb0bf1;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button button:hover{
+    color: #cb0bf1;
+    background: none;
+}
+
+
+i{
+    font-size: 25px;
+    margin-left: 35px;
+    justify-content: space-between;
+}
+
+/*footer section styling*/
+footer{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 25px;
+    background: #000;
+    padding: 15px 25px;
+    color: #fff;
+}
+</style>
+</html>

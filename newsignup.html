@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create an account!</title>
+    </head>
+    
+
+    <body>
+        <h1>Sign up</h1>
+        <form action="users/login" method="POST">
+            <div class="imgcontainer">
+                <img src="images/avatar.png" alt="Profile Picture" class="avatar">
+              </div>
+
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+          
+              <label for="uname"><b>Confirm Username</b></label>
+              <input type="text" placeholder="Confirm Username" name="uname" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+              
+              <label for="psw"><b>Confirm Password</b></label>
+              <input type="password" placeholder="Confirm Password" name="psw" required>
+
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+                <label for="submit"><br>
+                <input type="checkbox" checked="checked" name="Subscribe to our newsletter"> Subscribe to our newsletter
+            </label><br>
+            <button type="Sign up">Signup</button>
+            
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" class="cancelbtn">Cancel</button>
+             </div>
+            
+            </form>
+    </body>
+</html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+.cancelbtn {
+   width: max-content;
+  padding: 16px 18px;
+  background-color: #f44336;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+  
+}
+
+</style>
+</head>
