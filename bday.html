@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday</title>
+    <style>
+        html body{
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            background-image: url("images/back.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100%;
+            width: 100%;
+        }
+        .heading{
+            padding: 1em 5em;
+        }
+        p.heading-title{
+            color: #00f;
+            background-color: rgba(255,255,255,0.8 );
+            font-size: 5em;
+            text-align: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .container{
+            padding: 0 25em;
+        }
+        .content{
+            background-color: rgba(33,150,243,0.8);
+            display: grid;
+            grid-template-areas: 'avatar name name' 'avatar info button';
+            grid-gap: 0.5em;
+            padding: 0.5em;
+        }
+        .content > span{
+            justify-self: center;
+            align-self: center;
+        }
+        .content-1{
+            grid-area: avatar;
+        }
+        .content-1 > img{
+            height: 6em;
+            width: 6em;
+            border-radius: 50%;
+            border: 2px solid #0aaaa0;
+        }
+        .content-2{
+            grid-area: name;
+        }
+        .content-2 > h4{
+            color: #fff;
+            font-size: 2.5em;
+            font-weight: 600;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+        .content-3{
+            grid-area: info;
+        }
+        .content-3 > p{
+            color: #000;
+            margin: 0.5em;
+        }
+        .content-4{
+            grid-area: button;
+        }
+        .content-4 > button{
+            background: #000;
+            color: #fff;
+            border-radius: 1em;
+            border: 2px solid #fff;
+            padding: 0.7em;
+            margin: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="heading">
+            <p class="heading-title">Birthday's Today <span id="date"></span></p>
+        </section>
+        <br>
+        <section class="container">
+            <div class="content">
+                <span class="content-1"><img src="images/avatar.png"></span>
+                <span class="content-2"><h4> Shobhit Bhatt </h4></span>
+                <span class="content-3"><p> $5 Collected </p></span>
+                <span class="content-4"><button onclick=""> Gift Now </button></span>
+            </div>
+            <br>
+            <div class="content">
+                <span class="content-1"><img src="images/avatar.png"></span>
+                <span class="content-2"><h4> Lavina Simon</h4></span>
+                <span class="content-3"><p> $15 Donated </p></span>
+                <span class="content-4"><button onclick=""> Gift Now </button></span>
+            </div>
+            <br>
+            <div class="content">
+                <span class="content-1"><img src="images/avatar.png"></span>
+                <span class="content-2"><h4> Ankita Auliwalia</h4></span>
+                <span class="content-3"><p> $31 Donated </p></span>
+                <span class="content-4"><button onclick=""> Gift Now </button></span>
+            </div>
+            <br>
+            <div class="content">
+                <span class="content-1"><img src="images/avatar.png"></span>
+                <span class="content-2"><h4> Elon Musk </h4></span>
+                <span class="content-3"><p> 51 BTC Donated </p></span>
+                <span class="content-4"><button onclick=""> Gift Now </button></span>
+            </div>
+            <br>
+        </section>
+    </main>
+
+    <script>
+        let date = new Date();
+        document.getElementById("date").innerHTML = date.toDateString();
+    </script>
+</body>
+</html>
